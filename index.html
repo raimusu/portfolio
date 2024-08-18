@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
+    <title>ポートフォリオ - [あなたの名前]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>私のポートフォリオ</h1>
-    <p>こちらは私のポートフォリオサイトです。</p>
+    <header>
+        <h1>[あなたの名前]</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>ようこそ</h2>
+        <p>動画編集者およびWebエンジニアの[あなたの名前]です。私のポートフォリオをご覧ください。</p>
+    </section>
+
+    <section id="about">
+        <h2>プロフィール</h2>
+        <p>[あなたの経歴やスキル]</p>
+    </section>
+
+    <section id="projects">
+        <h2>プロジェクト</h2>
+        <div class="project-card">
+            <h3>プロジェクト1</h3>
+            <p>[プロジェクトの詳細]</p>
+        </div>
+        <div class="project-card">
+            <h3>プロジェクト2</h3>
+            <p>[プロジェクトの詳細]</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>サービス</h2>
+        <p>[提供するサービスの詳細]</p>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メール:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [あなたの名前]</p>
+    </footer>
 </body>
 </html>
